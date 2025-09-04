@@ -128,13 +128,14 @@
       gap: 20px;
       flex-wrap: wrap;
       margin-top: 40px;
+        padding:20px;
     }
 
     .box {
       flex: 1 1 300px;
       background-color: #833556;
       color: white;
-      padding: 30px;
+      padding: 40px;
       border-radius: 10px;
     }
 
@@ -230,3 +231,4 @@
     .icons img:hover {
       background-color: #833556;
     }
+
