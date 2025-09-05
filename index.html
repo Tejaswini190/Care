@@ -5,19 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOTHER CARE</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
   <nav>
-    <img src="./charitylogo.jpg" alt="Mother Care Logo"/>
+    <a href="index.html"><img src="./charitylogo.jpg" alt="Mother Care Logo"/></a>
     <ul>
       <li><a href="#home">HOME</a></li>
       <li><a href="#about">ABOUT US</a></li>
       <li><a href="#what">WHAT WE DO</a></li>
-      <li><a href="#services">SERVICES</a></li>
+      <li class="dropdown">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="emergency&disaster.html">Disaster & Emergency</a></li>
+          <li><a href="blooddonation.html">Blood Donation</a></li>
+          <li><a href="employement.html">Employment</a></li>
+          <li><a href="health&medical.html">Health & Medical</a></li>
+        </ul>
+      </li>
       <li><a href="#contact">CONTACT</a></li>
-      <button>Donate</button>
+      <button onclick="location.href='#donate'">Donate</button>
     </ul>
   </nav>
 
@@ -32,13 +41,12 @@
   <div class="about-left-side">
     <h1>Our Impact</h1>
     <h3>
-      We've worked on the lives of<br/>
-      poor people, orphans, young people, and people with disabilities.
+      We've worked on the lives of poor people, orphans, youth, and people with disabilities.
     </h3>
     <p>
       Blood Donation, Food Donation, Clothes Donation etc.<br/><br/>
       People from different backgrounds have a huge impact on us and our activities.<br/>
-      We can help them in all possible ways to regain hope in the future.
+      We help them in all possible ways to regain hope in the future.
     </p>
     <button>Read More</button>
   </div>
@@ -55,18 +63,20 @@
     We focus on creating opportunities that bring lasting impact to vulnerable communities.
     From providing food, shelter, and education to supporting healthcare and employment programs,
     our initiatives are designed to empower individuals and families.
-  </p>
+  </p>>
   <button>Read More</button>
 
   <div class="cards">
     <div class="box">
       <h2>We Fund</h2>
-      <h4>
+      <p>We provide financial assistance through donations and transparent fundraising.</p>
+      <img src="./charity7.jpg" alt="Food donation"/>
+      <h5>
         We believe that change begins with support. Through generous donations and 
         transparent fundraising, we provide financial assistance to those in need.
-      </h4>
-      
-      <img src="./charity7.jpg" alt="Food donation"/>
+      </h5>
+
+      <img src="./charity16.jpg" alt="Donation"/>
       <p>
         Our funding programs reach families struggling with poverty, medical emergencies, 
         and natural disasters. We make sure every rupee is utilized wisely by conducting 
@@ -76,18 +86,16 @@
       </p>
       <hr/>
     </div>
-
     <div class="box">
       <h2>We Educate</h2>
-      <h4>
+      <p>We provide scholarships, resources, and mentorship for children and youth.</p>
+      <img src="./charity9.jpg" alt="Children education"/>
+      <h5>
         Education is the most powerful tool to break the cycle of poverty. 
         We offer resources, scholarships, and mentorship programs for children and youth.
-      </h4>
+      </h5>
     <img src="./charity8.jpg" alt="Children education"/>
-    <img src="./charity9.jpg" alt="Children education"/>
-    
-
-      <p>
+    <p>
         Through our education initiatives, we support schools with learning materials, 
         provide digital literacy training, and create safe spaces for children to grow. 
         We also run after-school programs, skill development workshops, and career 
@@ -97,16 +105,14 @@
       </p>
       <hr/>
     </div>
-
     <div class="box">
-      <h2>We Provide Care</h2>
-      <h4>
+      <h2>We Care</h2>
+      <p>We extend health support, counseling, and daily essentials for the needy.</p>
+      <img src="./charity12.jpg" alt="Blood donation"/>
+      <h5>
         We extend support to the elderly, orphans, and those in crisis through 
         health camps, counseling services, and daily essentials.
-      </h4>
-    
-    
-    <img src="./charity12.jpg" alt="Blood donation"/>
+      </h5>
     <img src="./charity13.jpg" alt="Blood donation"/>
 
       <p>
@@ -118,14 +124,14 @@
       </p>
       <hr/>
     </div>
-
     <div class="box">
-      <h2>We Employe</h2>
-      <h4>
+      <h2>We Employ</h2>
+      <p>We train people in skills and connect them with job opportunities.</p>
+      <img src="./charity10.jpg" alt="Employment"/>
+      <h5>
         Empowering individuals through jobs and vocational training. 
         We help people become self-reliant and live with dignity.
-      </h4>    
-    <img src="./charity10.jpg" alt="Employment"/>
+      </h5>    
     <img src="./charity11.jpg" alt="Employment"/>
 
       <p>
@@ -139,39 +145,11 @@
       <hr/>
     </div>
   </div>
-        <div class="box">
-      <h2>Services</h2>
-      <h4>Health and Medical Support<br/>
-        Education<br/>
-        Food and Shelter<br/>
-        Employement<br/>
-        Emergency and Disaster relief<br/>
-
-        <img src="./charity14.jpg" alt="services"/>
-        <img src="./charity15.jpg" alt="services"/>
-
-
-    <p>provide services that address basic needs, education, health, livelihood, rights, 
-      and environmental sustainability. They function on principles of humanitarianism, 
-      social justice, capacity building, and sustainable development, 
-      filling gaps left by governments and ensuring vulnerable communities are not left behind.
-      </p>
-      <hr/>
-        </div>
-
-
-  <div class="images">
-    <img src="./charity2.jpg" alt="Food donation" />
-    <img src="./charity3.jpg" alt="Children education" />
-    <img src="./charity4.jpg" alt="Community care" />
-    <img src="./charity5.jpg" alt="Funding"/>
-    <img src="./charity6.jpg" alt="Funding"/>
-  </div>
 </section>
 
-<section class="action">
+<section class="action" id="donate">
   <h3>GIVE US A HAND</h3>
-  <h1>Support us and change orphan lives today!</h1>
+  <h1>Support us and change lives today!</h1>
   <img src="./charity6.jpg" alt="give us a hand"/>
   <button>Donate</button>
 </section>
@@ -179,14 +157,13 @@
 <section class="contact" id="contact">
   <div class="contact-left-side">
     <h2>Stay with us</h2>
-    <input type="email" placeholder="Email Address "/>
-    <br/>
-    <input type="text" placeholder="Phone Number"/>
-    <br/>
+    <input type="email" placeholder="Email Address "/><br/>
+    <input type="text" placeholder="Phone Number"/><br/>
     <button>SUBMIT</button>
     <h1>Give us a hand</h1>
-    <p>...mother care @ charitability trust</p>
+    <p>...Mother Care @ Charitability Trust</p>
   </div>
+  
   <div class="contact-right-side">
     <h3>Contact</h3>
     <h4>Hyderabad, Telangana, India</h4>
@@ -201,4 +178,12 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
 
